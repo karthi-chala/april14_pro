@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifelse_demo</title>
+</head>
+<body>
+    {% if login %}
+    <h2>welcome to mr/ms {{name}}</h2>
+    <ol>
+        <li>home</li>
+        <li>profile</li>
+        <li>cart</li>
+        <li>logout</li>
+    </ol>
+    {% else %}
+    <ol>
+        <li>register</li>
+        <li>login</li>
+    </ol>
+    {% endif %}
+
+    <h3>greatest of two numbers</h3>
+    {% if 'a>b' %}
+    <h1>a is greater</h1>
+    {% else %}
+    <h1>b is greater</h1>
+    {% endif %}
+</body>
+</html>
